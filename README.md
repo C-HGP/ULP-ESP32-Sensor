@@ -1,4 +1,4 @@
-#ULP-ESP32-SENSOR
+# ULP-ESP32-SENSOR
 
 ***What is ULP-ESP32-Sensor?***
 This is a large project aimed at giving the HASS spectrum a relevant and smart temp-sensor.
