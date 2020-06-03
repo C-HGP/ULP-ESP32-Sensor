@@ -1,22 +1,19 @@
-| PIN        | PIN ROW           | PIN  |
-| ------------- |:-------------:| -----:|  
-|              [VIN 3v3]         | 1 |   GND                 |  
-|              RESET             |2|   GPIO23 [VPSIMOSI]   |  
-|              GPIO36            |3|   GPIO22              |  
-|              GPIO39            |4|   GPIO1 [TX0]         |  
-|              GPIO34            |5|   GPIO3 [RX0]         |  
-|              GPIO35            |6|   GPIO21              |  
-|              GPIO32            |7|   GND                 |  
-|              GPIO33            |8|   GPIO19 [VSPIMISO]   |  
-|              GPIO25            |9|   GPIO18 [VSPI SCK]   |  
-|              GPIO26            |10|   GPIO5  [VPSI SS]    |  
-|              GPIO27            |11|   GPIO17 [TX2]        |  
-|              GPIO14            |12|   GPIO16 [RX2]        |  
-|              GPIO12            |13|   GPIO4               |  
-|              GND               |14|   GPIO0               |  
-|              GPIO13            |15|   GPIO2               |  
-|   [FLASH D2] GPIO9             |16|   GPIO15              |  
-|   [FLASH D3] GPIO10            |17|   GPIO8 [FLASH D1]    |  
-|   [FLASHCMD] GPIO11            |18|   GPIO7 [FLASH D0]    |  
-|              VIN 5V            |19|   GPIO6 [FLASHSCK]    |  
-|  | USB | | 
+#ULP-ESP32-SENSOR
+
+***What is ULP-ESP32-Sensor?***
+This is a large project aimed at giving the HASS spectrum a relevant and smart temp-sensor.
+It will give the user a easy UI to connect to the WiFi with HASS on, and help the user connect easily to HASS via MQTT.
+
+***Stages***
+The stages the unit will go into is:
+* Boot and search for a known network, if not known, start a WiFi network.
+* Let a user connect to the WiFi network.
+* Receive credentials to the WiFi the device will use.
+* Receive credentials to the MQTT broker that HASS is on.
+* Receive how often the temp will be sent.
+
+***To set up***
+To set this up currently, you need knowledge in espress-idf, basic MQTT knowledge and HASS.
+It will currently compile onto a ESP32 device with libraries noted in the folder, it does however have some bugs that
+make the device unstable.
+
