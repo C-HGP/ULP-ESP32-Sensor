@@ -1,0 +1,4 @@
+build/
+.projbuild
+.ci
+sdkconfig.old
